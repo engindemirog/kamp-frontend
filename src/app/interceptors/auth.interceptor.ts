@@ -23,5 +23,3 @@ export class AuthInterceptor implements HttpInterceptor {
 }
 
 //Error
-
-//23.15 Dersteyiz
