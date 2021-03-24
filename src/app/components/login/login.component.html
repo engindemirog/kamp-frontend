@@ -1,0 +1,38 @@
+<body class="text-center">
+  <main class="form-signin">
+    <form [formGroup]="loginForm">
+      <h1 class="h3 mb-3 fw-normal">Giriş yap</h1>
+
+      <div class="form-floating">
+        <input
+          formControlName="email"
+          type="email"
+          class="form-control"
+          id="floatingInput"
+          placeholder="name@example.com"
+        />
+        <label for="floatingInput">E-posta</label>
+      </div>
+      <div class="form-floating">
+        <input
+        formControlName="password"
+          type="password"
+          class="form-control"
+          id="floatingPassword"
+          placeholder="Password"
+        />
+        <label for="floatingPassword">Parola</label>
+      </div>
+
+      <div class="checkbox mb-3">
+        <label>
+          <input type="checkbox" value="remember-me" /> Remember me
+        </label>
+      </div>
+      <button class="w-100 btn btn-lg btn-primary" (click)="login()">
+        Giriş yap
+      </button>
+      <p class="mt-5 mb-3 text-muted">&copy; 2017–2021</p>
+    </form>
+  </main>
+</body>
